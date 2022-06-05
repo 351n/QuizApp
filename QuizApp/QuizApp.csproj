@@ -48,45 +48,45 @@
   <ItemGroup>
     <Compile Include="Answer.cs" />
     <Compile Include="Answerable.cs" />
-    <Compile Include="Creator.cs">
+    <Compile Include="Forms\Creator.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Creator.Designer.cs">
+    <Compile Include="Forms\Creator.Designer.cs">
       <DependentUpon>Creator.cs</DependentUpon>
     </Compile>
-    <Compile Include="Menu.cs">
+    <Compile Include="Forms\Menu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Menu.Designer.cs">
+    <Compile Include="Forms\Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Quiz.cs">
+    <Compile Include="Forms\Quiz.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Quiz.Designer.cs">
+    <Compile Include="Forms\Quiz.Designer.cs">
       <DependentUpon>Quiz.cs</DependentUpon>
     </Compile>
     <Compile Include="SingleAnswerQuestion.cs" />
-    <Compile Include="Summary.cs">
+    <Compile Include="Forms\Summary.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Summary.Designer.cs">
+    <Compile Include="Forms\Summary.Designer.cs">
       <DependentUpon>Summary.cs</DependentUpon>
     </Compile>
     <Compile Include="TextAnswer.cs" />
-    <Compile Include="TextAnswerInput.cs">
+    <Compile Include="Controls\TextAnswerInput.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="TextAnswerInput.Designer.cs">
+    <Compile Include="Controls\TextAnswerInput.Designer.cs">
       <DependentUpon>TextAnswerInput.cs</DependentUpon>
     </Compile>
     <Compile Include="User.cs" />
-    <EmbeddedResource Include="Creator.resx">
+    <EmbeddedResource Include="Forms\Creator.resx">
       <DependentUpon>Creator.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Menu.resx">
+    <EmbeddedResource Include="Forms\Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -98,13 +98,13 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Quiz.resx">
+    <EmbeddedResource Include="Forms\Quiz.resx">
       <DependentUpon>Quiz.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Summary.resx">
+    <EmbeddedResource Include="Forms\Summary.resx">
       <DependentUpon>Summary.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TextAnswerInput.resx">
+    <EmbeddedResource Include="Controls\TextAnswerInput.resx">
       <DependentUpon>TextAnswerInput.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
