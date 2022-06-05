@@ -11,15 +11,15 @@ namespace QuizApp
         static Menu menuForm;
         static Quiz quizForm;
         static Summary summaryForm;
+        static User user;
 
-        /// <summary>
-        /// Główny punkt wejścia dla aplikacji.
-        /// </summary>
         [STAThread]
         static void Main() {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(CreateMenu());
+
+            user = new User("DemoUser");
         }
 
         static Menu CreateMenu() {
