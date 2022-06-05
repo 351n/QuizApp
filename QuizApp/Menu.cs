@@ -26,6 +26,12 @@ namespace QuizApp
             MessageBox.Show("Setting currently not available.", "Not implemented yet!", MessageBoxButtons.OK);
         }
 
+        private void creatorButton_Click(object sender, EventArgs e) {
+            Program.ShowCreator();
+
+            Hide();
+        }
+
         private void exitButton_Click(object sender, EventArgs e) {
             Application.Exit();
         }

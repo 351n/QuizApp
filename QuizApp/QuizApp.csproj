@@ -48,6 +48,12 @@
   <ItemGroup>
     <Compile Include="Answer.cs" />
     <Compile Include="Answerable.cs" />
+    <Compile Include="Creator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Creator.Designer.cs">
+      <DependentUpon>Creator.cs</DependentUpon>
+    </Compile>
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,7 +76,16 @@
       <DependentUpon>Summary.cs</DependentUpon>
     </Compile>
     <Compile Include="TextAnswer.cs" />
+    <Compile Include="TextAnswerInput.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TextAnswerInput.Designer.cs">
+      <DependentUpon>TextAnswerInput.cs</DependentUpon>
+    </Compile>
     <Compile Include="User.cs" />
+    <EmbeddedResource Include="Creator.resx">
+      <DependentUpon>Creator.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
@@ -88,6 +103,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Summary.resx">
       <DependentUpon>Summary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TextAnswerInput.resx">
+      <DependentUpon>TextAnswerInput.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

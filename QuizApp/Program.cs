@@ -11,6 +11,7 @@ namespace QuizApp
         static Menu menuForm;
         static Quiz quizForm;
         static Summary summaryForm;
+        static Creator creatorForm;
         static User user;
 
         [STAThread]
@@ -48,6 +49,14 @@ namespace QuizApp
             }
 
             summaryForm.Show();
-        }        
+        }
+
+        internal static void ShowCreator() {
+            if(creatorForm == null) {
+                creatorForm = new Creator();
+            }
+
+            creatorForm.Show();
+        }
     }
 }
